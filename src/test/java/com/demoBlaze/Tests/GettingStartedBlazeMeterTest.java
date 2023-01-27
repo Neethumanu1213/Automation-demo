@@ -22,7 +22,7 @@ public class GettingStartedBlazeMeterTest extends TestBase {
 	BlazeMeterPage blazeMeterPage=new BlazeMeterPage();
 	GettingStartedBlazeMeterPage gettingStartedBlazeMeterPage=blazeMeterPage.clickOnGetingStartedButton();
 	String title= gettingStartedBlazeMeterPage.getTitleOfThePage();
-	Assert.assertEquals(title,"Getting Started – BlazeMeter","Title is not matching");
+	Assert.assertEquals(title,"Security check","Title is not matching");
 
 	}
 
