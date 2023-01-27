@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+
+	<listeners>
+		<listener
+			class-name="com.demoBlaze.Listeners.CustomListener" />
+		
+		<listener
+			class-name="com.demoBlaze.Utils.TransformerForRetry" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.demoBlaze.BlazeMeterPage" />
+			<class name="com.demoBlaze.GettingStartedBlazeMeter" />
+			
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
